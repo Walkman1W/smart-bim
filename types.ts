@@ -4,7 +4,9 @@ export enum BIMOperation {
   COLOR_CODE = 'COLOR_CODE',
   SELECT = 'SELECT',
   RESET = 'RESET',
-  UNKNOWN = 'UNKNOWN'
+  UNKNOWN = 'UNKNOWN',
+  ROTATE_LEFT = 'ROTATE_LEFT',
+  ROTATE_RIGHT = 'ROTATE_RIGHT'
 }
 
 export interface BIMActionPayload {
@@ -40,3 +42,5 @@ export interface Message {
   timestamp: Date;
   suggestions?: BIMSuggestion[];
 }
+
+export type GestureType = 'NONE' | 'ROTATE_LEFT' | 'ROTATE_RIGHT' | 'WAVE';

@@ -2,6 +2,7 @@
   "name": "Smart BIM Commander",
   "description": "A lightweight BIM visualization platform integrated with AI for natural language searching, filtering, and analysis of architectural models using Speckle and Gemini.",
   "requestFramePermissions": [
-    "microphone"
+    "microphone",
+    "camera"
   ]
 }
